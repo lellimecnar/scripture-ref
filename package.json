@@ -1,0 +1,28 @@
+{
+  "name": "scripture-ref",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/reference.js",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/lellimecnar/scripture-ref.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "npm prune && ./node_modules/babel/bin/babel.js ./src --out-dir ./dist --stage 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^5.8.23"
+  },
+  "dependencies": {
+    "leven": "^2.0.0",
+    "lodash": "^3.10.1",
+    "numeral": "^1.5.3"
+  },
+  "babel": {
+    "stage": 0
+  }
+}
